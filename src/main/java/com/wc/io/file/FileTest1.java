@@ -67,12 +67,11 @@ public class FileTest1 {
     public void test4() {
         File file = new File("src/main/java/com/wc/io/file/testdir/testdir1");
         if (file.exists()) {
+            //注意，文件删除要求文件夹中没有其他文件
             boolean isDeleted = file.delete();
+            //删除成功返回true，否则返回false
             System.out.println(isDeleted);
         }
     }
-
-
-
 
 }
