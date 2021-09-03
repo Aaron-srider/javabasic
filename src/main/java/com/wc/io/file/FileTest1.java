@@ -60,5 +60,19 @@ public class FileTest1 {
         }
     }
 
+    /**
+     * 测试delete
+     */
+    @Test
+    public void test4() {
+        File file = new File("src/main/java/com/wc/io/file/testdir/testdir1");
+        if (file.exists()) {
+            boolean isDeleted = file.delete();
+            System.out.println(isDeleted);
+        }
+    }
+
+
+
 
 }
